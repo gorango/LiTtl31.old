@@ -20,10 +20,11 @@ body {
   margin: 0;
   width: 100vw;
   height: 100vh;
-  background: rgb(34,34,34);
-  background: -moz-linear-gradient(45deg, rgba(34,34,34,1) 0%, rgba(66,66,66,1) 100%);
-  background: -webkit-linear-gradient(45deg, rgba(34,34,34,1) 0%,rgba(66,66,66,1) 100%);
-  background: linear-gradient(45deg, rgba(34,34,34,1) 0%,rgba(66,66,66,1) 100%);
+  background: rgb(22,22,22);
+  background: -moz-linear-gradient(45deg, rgba(22,22,22,1) 0%, rgba(44,44,44,1) 100%);
+  background: -webkit-linear-gradient(45deg, rgba(22,22,22,1) 0%,rgba(44,44,44,1) 100%);
+  background: linear-gradient(45deg, rgba(22,22,22,1) 0%,rgba(44,44,44,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#161616', endColorstr='#444444',GradientType=1 );
 }
 
 svg.logo {
