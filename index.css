@@ -33,19 +33,19 @@ svg.logo {
   height: 300px;
   left: 50%;
   top: 40%;
-  transform: translate(-50%,-50%) rotate(3deg);
+  transform: translate(-50%,-50%) rotate(5deg);
 }
 
 svg.logo.rotate {
   animation-name: rotate;
   animation-duration: .4s;
   animation-timing-function: cubic-bezier(0.58,-0.03, 0.15, 1.21);
-  animation-delay: .4s;
+  animation-delay: .6s;
   animation-fill-mode: forwards;
 }
 
 @keyframes rotate {
-  0% { transform: translate(-50%,-50%) rotate(3deg) }
+  0% { transform: translate(-50%,-50%) rotate(5deg) }
   100% { transform: translate(-50%,-50%) rotate(0deg) }
 }
 

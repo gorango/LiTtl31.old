@@ -478,9 +478,7 @@ const ldg = logo
 const anim_rotateLogo = anim_expand1to3Dash.then(() =>
   new Promise((resolve) => {
     document.querySelector('svg').classList.add('rotate')
-    setTimeout(() => {
-      next()
-    }, 800)
+    setTimeout(next, 1200)
   })
 )
 
@@ -561,7 +559,7 @@ const fx = new TextScramble(el)
 let counter = 0
 const next = () => {
   fx.setText(PHRASES[counter]).then(() => {
-    setTimeout(next, 3000)
+    setTimeout(next, 1500)
   })
   counter = (counter + 1) % PHRASES.length
 }
