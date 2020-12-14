@@ -1,0 +1,24 @@
+#splash
+	svg.logo
+		width 300px
+		height 300px
+		transform rotate(5deg)
+		transition all .4s cubic-bezier(0.58,-0.03, 0.15, 1.21)
+
+		&.rotate
+			animation-name rotateLogo
+			animation-duration .4s
+			animation-timing-function cubic-bezier(0.58,-0.03, 0.15, 1.21)
+			animation-delay .6s
+			animation-fill-mode forwards
+
+		&.rotated
+			transform rotate(0)
+			&:hover
+				transform rotate(-360deg)
+
+@keyframes rotateLogo
+	0%
+		transform: rotate(5deg)
+	100%
+		transform: rotate(0deg)

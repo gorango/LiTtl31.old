@@ -479,6 +479,10 @@ const anim_rotateLogo = anim_expand1to3Dash.then(() =>
   new Promise((resolve) => {
     document.querySelector('svg').classList.add('rotate')
     setTimeout(next, 1200)
+    setTimeout(() => {
+      document.querySelector('svg').classList.remove('rotate')
+      document.querySelector('svg').classList.add('rotated')
+    }, 1200)
   })
 )
 
