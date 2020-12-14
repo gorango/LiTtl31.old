@@ -7,7 +7,7 @@
     "dev": "run-p server watch",
     "deploy": "run-s build:prod release",
     "html": "pug -P src/index.pug -o dist",
-    "css": "stylus src/style/index.styl -p | postcss -o dist/css/style.css",
+    "css": "stylus src/css/index.styl -p | postcss -o dist/css/style.css",
     "js:dev": "babel src/js/main --presets=@babel/preset-env --source-maps | uglifyjs > dist/js/main.js",
     "js:prod": "babel src/js/main --presets=@babel/preset-env | uglifyjs > dist/js/main.js",
     "js:vendor": "uglifyjs src/js/vendor/*.js > dist/js/vendor.js",
