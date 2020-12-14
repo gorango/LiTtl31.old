@@ -22,7 +22,7 @@
     "postbuild:prod": "npm run hash",
     "hash": "hashmark **/{main,vendor,style}.* -d md5 -l 8 --cwd dist '{dir}/{name}.{hash}{ext}' | replaceinfiles -S -s dist/*.html",
     "posthash": "rm dist/js/main.js dist/js/vendor.js dist/css/style.css",
-    "release": "gh-pages -d dist -b prod -m 'release updates'",
+    "release": "gh-pages -d dist -b prod -m 'release updates' --no-history",
     "preserve": "npm run build:dev",
     "serve": "browser-sync start -s --files dist --ss dist --port 8080 --no-open --no-ui",
     "watch:assets": "onchange 'src/assets/**/*' -- npm run copy:assets",
