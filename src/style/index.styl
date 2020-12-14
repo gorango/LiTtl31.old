@@ -1,22 +1,21 @@
+@import './font.styl'
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@import './font.styl'
 
 body
 	padding 0
 	margin 0
 	height 100vh
 	background rgb(22,22,22)
-	background -moz-linear-gradient(45deg, rgba(22,22,22,1) 0%, rgba(44,44,44,1) 100%)
-	background -webkit-linear-gradient(45deg, rgba(22,22,22,1) 0%,rgba(44,44,44,1) 100%)
 	background linear-gradient(45deg, rgba(22,22,22,1) 0%,rgba(44,44,44,1) 100%)
 
 main
 	& > section
 		min-height 100vh
-		color rgba(255, 255, 255, 0.5)
+
+h1
+	font-size 32px
 
 #splash
 	display flex
@@ -24,25 +23,7 @@ main
 	align-items center
 	justify-content center
 
-#projects
-	position relative
-
-	&::before
-		content ''
-		display block
-		background red
-		width 40px
-		height 40px
-
-	.pro-1
-		.parallax
-			background-attachment scroll
-			background-image url(https://upload.wikimedia.org/wikipedia/commons/e/ec/Silego_clock_generator.JPG)
-			background-size cover
-			background-position 50% 50%
-
-svg
-	&.logo
+	svg.logo
 		position absolute
 		width 300px
 		height 300px
@@ -61,7 +42,3 @@ svg
 		transform: translate(-50%,-50%) rotate(5deg)
 	100%
 		transform: translate(-50%,-50%) rotate(0deg)
-
-h1
-	font-size 32px
-
